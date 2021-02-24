@@ -1,14 +1,14 @@
 export const fetchPostAction = (payload) => ({
-    action: "FETCH_ALL",
+    type: "FETCH_ALL",
     payload
 });
 
 export const addPostAction = (payload) => ({
-    action: "ADD_POST",
+    type: "ADD_POST",
     payload
 })
 
 export const addComment = (payload) => ({
-    action: "ADD_COMMENT",
+    type: "ADD_COMMENT",
     payload
 })
