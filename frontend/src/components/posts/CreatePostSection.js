@@ -27,7 +27,7 @@ const CreatePostSection = () => {
                         color="primary"
                         fullWidth={true}
                         onClick={openCreatePostModal}>
-                    Primary
+                    Create New Post
                 </Button>
             {isCreatePostVisible && <CreatePostModal
                     open={isCreatePostVisible}
