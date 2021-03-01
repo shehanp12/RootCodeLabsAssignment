@@ -12,3 +12,10 @@ export const addComment = (payload) => ({
     type: "ADD_COMMENT",
     payload
 })
+
+
+export const increment = () => {
+    return {
+        type: 'INCREMENT'
+    };
+};
