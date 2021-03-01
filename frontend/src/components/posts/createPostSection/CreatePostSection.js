@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Button from "@material-ui/core/Button";
 import CreatePostModal from "./CreatePostModal";
-import {addPost} from "../../repositories/postRepository";
+import {addPost} from "../../../repositories/postRepository";
 import {useDispatch} from "react-redux";
 
 const CreatePostSection = () => {

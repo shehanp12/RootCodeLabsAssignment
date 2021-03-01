@@ -6,7 +6,8 @@ const postReducer = (posts = initialState, action) => {
         case "FETCH_ALL":
             return action.payload.data;
         case "ADD_POST":
-            return [...posts, action.payload.data];
+            // return action.payload.data;
+             return [...posts, action.payload.data];
         case "ADD_COMMENT":
             const postIndex = posts.findIndex((post)=> post.id === action.payload.data.id);
             let newPostList = posts.slice();

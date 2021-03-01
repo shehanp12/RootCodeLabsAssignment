@@ -1,5 +1,5 @@
 import {fetchPosts, createPost} from "../services/API";
-import {fetchPostAction} from "../store/actions/postActions";
+import {addPostAction, fetchPostAction} from "../store/actions/postActions";
 
 export const getPosts = () => async (dispatch) => {
     try{
@@ -12,7 +12,7 @@ export const getPosts = () => async (dispatch) => {
 export const addPost = (newPost) =>  async (dispatch) => {
     try {
         const res = await createPost(newPost);
-        dispatch(addPost(res));
+        dispatch(addPostAction(res));
     }catch (e) {
         console.log(e);
     }

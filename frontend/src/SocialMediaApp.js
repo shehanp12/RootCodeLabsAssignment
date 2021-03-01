@@ -4,9 +4,11 @@ import Content from "./components/layout/Content";
 
 const SocialMediaApp = () => {
     return(
+
         <React.Fragment>
             <NavBar/>
             <Content/>
+           
         </React.Fragment>
     );
 }

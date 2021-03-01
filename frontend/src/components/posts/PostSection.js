@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import PostTile from "./PostTile/PostTile";
+import PostTile from "./postTile/PostTile";
 import Box from "@material-ui/core/Box";
 import PostModal from "./PostModal";
 import {useDispatch, useSelector} from "react-redux";
@@ -20,7 +20,7 @@ const PostSection = (props) => {
 
     useEffect(()=>{
         dispatch(getPosts());
-    },[posts]);
+    },[dispatch, posts]);
 
     return (
         <React.Fragment>

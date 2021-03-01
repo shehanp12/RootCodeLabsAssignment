@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Grid, makeStyles} from "@material-ui/core";
-import CreatePostSection from "../posts/CreatePostSection";
+import CreatePostSection from "../posts/createPostSection/CreatePostSection";
 import Box from "@material-ui/core/Box";
 import PostSection from "../posts/PostSection";
 
